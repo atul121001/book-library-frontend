@@ -29,6 +29,7 @@ function App() {
       filters[searchParams.criteria] = searchParams.value;
     }
     fetchBooks(filters);
+    console.log("i am loaded");
   }, [activeFilter, searchParams]);
 
   const addToast = (message, type = 'info') => {
